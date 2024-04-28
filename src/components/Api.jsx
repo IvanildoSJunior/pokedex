@@ -1,8 +1,10 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import { PokemonContext } from '../contexts/PokemonContext';
 
 function Api({ pokemon }) {
     const [pokemonData, setPokemonData] = useState(null);
+    const pokemonContext = useContext(PokemonContext)
 
     useEffect(() => {
         async function fetchData() {
@@ -10,6 +12,7 @@ function Api({ pokemon }) {
                 const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
                 const data = await response.json();
                 setPokemonData(data);
+                pokemonContext.changePokemon(data.id);
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -19,8 +22,12 @@ function Api({ pokemon }) {
     }, [pokemon]);
 
     if (!pokemonData) {
-        return null;
+        return null
     }
+
+    
+    
+
 
     return (
         <React.Fragment>

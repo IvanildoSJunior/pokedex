@@ -6,7 +6,7 @@ function Form({ className, inputClassName }) {
     const [searchValue, setSearchValue] = useState("");
 
     const handleChange = (e) => {
-        setSearchValue(e.target.value);
+        setSearchValue(e.target.value.toLowerCase());
     }
 
     const handleSubmit = (e) => {

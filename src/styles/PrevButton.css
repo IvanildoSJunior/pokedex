@@ -1,0 +1,3 @@
+.prev:active {
+    filter: brightness(50%);
+}
