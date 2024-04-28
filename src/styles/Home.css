@@ -55,23 +55,21 @@
     position: fixed;
     width: 4%;
     height: auto;
-    top: 580px;
-    left: 1300px;
-    
+    top: 75%;
+    left: 90.67%;
 }
+
 
 .prev-button img {
     position: fixed;
     width: 4%;
     height: auto;
-    top: 580px;
-    left: 1170px;
+    top: 75%;
+    left: 81%;
     
 }
 
-.next-button:active {
-    box-shadow: 3px 4px 0 #888, 5px 6px 0 #333;
-}
+
 .info-button {
     position: fixed;
     background-color: #6d6e6d;
