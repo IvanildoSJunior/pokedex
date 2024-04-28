@@ -1,12 +1,18 @@
-import React from "react";
+import {React, useState, useContext} from "react";
 import background from '../assets/images/background.png';
 import '../styles/Home.css'
 import Form from '../components/Form';
 import NextButton from "../components/NextButton";
 import PrevButton from "../components/PrevButton";
 import Api from "../components/Api";
+import { PokemonContext } from "../contexts/PokemonContext";
 
 function Home() {
+
+    const pokemonContext = useContext(PokemonContext);
+    
+
+
     return (
 
         <div className="home">
@@ -15,7 +21,7 @@ function Home() {
             <Form className="custom-form" inputClassName="custom-input" />
             <NextButton className="next-button"/>
             <PrevButton className="prev-button"/>
-            <Api pokemon='1'/>
+            <Api pokemon={pokemonContext.pokemon}/>
         </div>
     )
 }
