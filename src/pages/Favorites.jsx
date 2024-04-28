@@ -1,8 +1,12 @@
 import React from "react";
+import Infos from "../assets/images/Infos.png";
+import "../styles/MoreInfo.css";
 
 function Favorites() {
     return (
-        <h1>Favorites</h1>
+        <div>
+            <img src={Infos} alt="Infos"/>
+        </div>
     )
 }
 
