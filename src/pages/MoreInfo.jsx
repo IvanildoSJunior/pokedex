@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FaHeart, FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Infos from "../assets/images/Infos.png";
 import "../styles/MoreInfo.css";
@@ -8,7 +8,7 @@ function MoreInfo() {
 
     return (
         <div className="moreinfo">
-            <img src={Infos} alt="Infos" style={{ width: '1500px', height: 'auto' }} />
+            <img src={Infos} alt="Infos"className="background"/>
             
 
             <Link to="/favorites" className="favoritebtn">
