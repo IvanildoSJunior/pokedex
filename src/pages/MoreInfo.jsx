@@ -1,8 +1,9 @@
 import React from "react";
-import { FaHeart, FaStar } from "react-icons/fa";
+
 import { Link } from "react-router-dom";
 import Infos from "../assets/images/Infos.png";
 import "../styles/MoreInfo.css";
+
 function MoreInfo() {
 
     return (

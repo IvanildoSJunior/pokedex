@@ -11,7 +11,12 @@ export const PokemonProvider = ({children}) => {
 
     const nextPokemon = () => {
         const currentPokemon = parseInt(pokemon);
-        setPokemon((currentPokemon + 1).toString());
+        if(currentPokemon >= 1025)
+        {
+            setPokemon((currentPokemon).toString());
+        }else{
+            setPokemon((currentPokemon + 1).toString());
+        }
     }
 
     const prevPokemon = () => {
