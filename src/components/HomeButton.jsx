@@ -3,11 +3,11 @@ import homeImage from '../assets/images/home.png';
 import { Link } from "react-router-dom"
 
 
-function HomeButton({imageSize}) {
+function HomeButton({imageSize, className}) {
 
     return (
         <Link to="/" className='homeButton'>
-            <img src={homeImage} alt='Home' style={{width: imageSize, height: 'auto' }} />
+            <img src={homeImage} className={className} alt='Home' style={{width: imageSize, height: 'auto' }} />
         </Link>
     )
 
