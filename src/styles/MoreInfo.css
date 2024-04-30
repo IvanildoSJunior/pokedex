@@ -1,3 +1,7 @@
+.moreinfo {
+  font-family: "Vazirmatn", sans-serif;
+}
+
 .favorites-btn {
     position: fixed;
     background-color: #6d6e6d; 
@@ -17,6 +21,7 @@
     &:hover {
       background-color: #45a049;
     }
+    
 }
 
 .add-favorites{
@@ -48,8 +53,72 @@
     left: 0;
 }
 
-.homeButton{
+.homeButtonInfo{
   position: relative;
-  left: -47vw;
-  top: -31vh;
+  left: -37.5vw;
+  top: -4vh;
+}
+
+.pokemon_imageInfo{
+  position: relative;
+
+  width: 20rem;
+  height: 20rem;
+  left: -35.5vw;
+  
+}
+
+
+.pokemon_dataInfo {
+  width: 14rem;
+  height: 2rem;
+  position:absolute;
+  color: #ffffff;
+  top: 75vh;
+  left: 6vw;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.pokemon_altura {
+  position: absolute;
+  width: 8rem;
+  height: 1rem;
+  color: #ffffff;
+  left: 20vw;
+  top: 23.5vh;
+
+}
+
+.pokemon_Tipos {
+  position: relative;
+  width: 8rem;
+  height: 0rem;
+  color: #ffffff;
+  top: -13vh;
+  left: 17vw;
+}
+
+.pokemon_Peso{
+  color: #ffffff;
+  position: relative;
+  width: 8rem;
+  height: 0rem;
+  top: -2vh;
+  left: 0.6vw;
+}
+
+.pokemon_ha{
+  color: #ffffff;
+  position: relative;
+  width: 8rem;
+  height: 0rem;
+  top: -3.5vh;
+  left: 17vw;
+  background-color: RED;
+  display: flex;
 }

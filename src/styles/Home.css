@@ -18,14 +18,16 @@
 
 .pokemon_data {
     width: 100%;
-    height: 4.3rem;
+    height: 2rem;
     position:relative;
     color: #0a0a0a;
-    top: 42.2vh;
+    top: 45.6vh;
     left: -12vw;
     overflow: hidden;
     
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pokemon_name {

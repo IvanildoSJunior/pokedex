@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import '../styles/FavoritesButton.css'
 function FavoritesButton() {
     return (
         <Link to="/favorites" className="favoriteButton">

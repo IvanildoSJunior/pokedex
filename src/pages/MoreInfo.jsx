@@ -4,13 +4,17 @@ import { Link } from "react-router-dom";
 import Infos from "../assets/images/Infos.png";
 import "../styles/MoreInfo.css";
 import HomeButton from '../components/HomeButton';
+import ApiMoreInfo from "../components/ApiMoreInfo";
 
 function MoreInfo() {
 
     return (
         <div className="moreinfo">
             <img src={Infos} alt="Infos"className="background"/>
-            <HomeButton imageSize="50px" className='HomeButton'/>
+            <div className="homeButtonInfo">
+                <HomeButton />
+            </div>
+            
 
             
 
@@ -19,6 +23,9 @@ function MoreInfo() {
             </Link>
 
             <button className="add-favorites">Adicionar aos Favoritos <FaHeart /></button>
+            <div className="moreInfoImg">
+                <ApiMoreInfo />
+            </div>
 
         </div>
     );

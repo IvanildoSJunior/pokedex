@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'pokemonFont';
-    src: url('./assets/font/PokemonFont.ttf');
-}
+
 
 body {
     background: linear-gradient(rgb(0, 130, 136), black);
@@ -12,6 +9,6 @@ body {
     justify-content: center;
     align-items: center;
     color: rgb(201, 201, 201);
-    font-family: 'pokemonFont', sans-serif;
+    font-family: "Vazirmatn", sans-serif;
     
 }
