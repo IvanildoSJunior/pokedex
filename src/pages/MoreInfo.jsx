@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FaHeart, FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Infos from "../assets/images/Infos.png";
 import "../styles/MoreInfo.css";
 import HomeButton from '../components/HomeButton';
 import ApiMoreInfo from "../components/ApiMoreInfo";
-
+import { FavoritesContext } from "../contexts/FavoritesContext";
+import { PokemonContext } from "../contexts/PokemonContext";
+import AddFavorite from "../components/AddFavorite";
 function MoreInfo() {
+
+    const favoritesContext = useContext(FavoritesContext);
+    const pokemonContext = useContext(PokemonContext);
+
+    const handleFavorite = () => {
+        <AddFavorite/>
+    }
+    
 
     return (
         <div className="moreinfo">
@@ -22,7 +32,8 @@ function MoreInfo() {
                 <button className="favorites-btn">Favoritos <FaStar /></button>
             </Link>
 
-            <button className="add-favorites">Adicionar aos Favoritos <FaHeart /></button>
+            <AddFavorite />
+            
             <div className="moreInfoImg">
                 <ApiMoreInfo />
             </div>

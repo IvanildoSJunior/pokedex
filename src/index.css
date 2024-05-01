@@ -12,3 +12,7 @@ body {
     font-family: "Vazirmatn", sans-serif;
     
 }
+
+body.customBackground {
+    background: linear-gradient(rgb(0, 130, 136), black);
+}
