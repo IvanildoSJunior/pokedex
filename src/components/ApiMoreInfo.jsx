@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { handleType } from '../components/Types';
 import { PokemonContext } from '../contexts/PokemonContext';
-import { handleType } from '../components/Types'
 import { handleHA } from './Habilidades';
 
 function ApiMoreInfo () {
@@ -40,13 +40,13 @@ function ApiMoreInfo () {
                 <span className='pokemon_altura'>Altura: {pokemonData.height}</span>
             </h1>
             <h1 className='pokemon_Tipos'>
-                <span className='pokemon_Tipos'>Tipos: {handleType(pokemonData.types)} </span>
+                <span className='pokemon_Tipos'>Tipos:<br/>{handleType(pokemonData.types)} </span>
             </h1>
             <h1 className='pokemon_Peso'>
                 <span className='pokemon_Peso'>Peso: {pokemonData.weight}</span>
             </h1>
             <h1 className='pokemon_ha'>
-                <span className='pokemon_ha'>Habilidades: {handleHA(pokemonData.abilities)}</span>
+                <span className='pokemon_ha'>Habilidades:<br/>{handleHA(pokemonData.abilities)}</span>
             </h1>
         </React.Fragment>
     );

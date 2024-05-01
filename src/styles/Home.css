@@ -22,7 +22,7 @@
     position:relative;
     color: #0a0a0a;
     top: 45.6vh;
-    left: -12vw;
+    left: -13vw;
     overflow: hidden;
     
     display: flex;
@@ -87,7 +87,7 @@
     cursor: pointer; 
     border-radius: 5px; 
     top: 25vh;
-    left: 82vw;
+    left: 83.5vw;
     transition: background-color 0.3s; 
     &:hover {
       background-color: #45a049;
@@ -108,7 +108,7 @@
     cursor: pointer; 
     border-radius: 5px; 
     top: 42vh;
-    left: 82vw;
+    left: 83.5vw;
     transition: background-color 0.3s; 
     &:hover {
       background-color: #45a049;
