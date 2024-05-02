@@ -1,22 +1,20 @@
-.favoritesPage {
-
-    
-    display: flex;
-}
 
 .pokemon-images img{
-
+    
     position: relative;
-    width: 20rem;
-    top: 70vh;
-    left: 5vw;
-    bottom: 10vh;
+    width: 17rem;
+    top: 60vh;
+    left: 7vw;
+    
 }
+
+
+
 
 .hud {
     width: 100%;
-    height: 100%;
-    
+    height: auto;
+
     position: absolute;
     top: 0;
     left: 0;
@@ -27,7 +25,7 @@
     color: black;
     position: absolute;
     left: 45vw;
-    top: 11vh;
+    top: 15vh;
     height: 3.5rem;
 }
 
@@ -37,7 +35,7 @@ font-size: 3rem;
 
 .homeButtonFav{
     position: absolute;
-    left: 4vw;
-    top: 15vh;
+    left: 5vw;
+    top: 19vh;
 
   }

@@ -8,7 +8,6 @@ import NextButton from "../components/NextButton";
 import PrevButton from "../components/PrevButton";
 import { PokemonContext } from "../contexts/PokemonContext";
 import '../styles/Home.css';
-import AddFavorite from "../components/AddFavorite";
 
 function Home() {
 
@@ -27,7 +26,7 @@ function Home() {
             <InfosButton className= "infoButton"/>
             <FavoritesButton className= "favoritesButton"/>
             <Api pokemon={pokemonContext.pokemon}/>
-            <AddFavorite />
+            
         </div>
     )
 }

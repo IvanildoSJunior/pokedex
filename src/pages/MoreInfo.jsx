@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
-import { FaHeart, FaStar } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Infos from "../assets/images/Infos.png";
-import "../styles/MoreInfo.css";
-import HomeButton from '../components/HomeButton';
+import AddFavorite from "../components/AddFavorite";
 import ApiMoreInfo from "../components/ApiMoreInfo";
+import HomeButton from '../components/HomeButton';
 import { FavoritesContext } from "../contexts/FavoritesContext";
 import { PokemonContext } from "../contexts/PokemonContext";
-import AddFavorite from "../components/AddFavorite";
+import "../styles/MoreInfo.css";
 function MoreInfo() {
 
     const favoritesContext = useContext(FavoritesContext);

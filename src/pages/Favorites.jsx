@@ -1,9 +1,8 @@
-import React, { useContext, useEffect } from "react";
-import { FavoritesContext } from "../contexts/FavoritesContext";
-import ApiFavorites from "../components/ApiFavorites"; 
-import '../styles/Favorites.css'
-import hud from "../assets/images/favorites_hud.png"
+import React from "react";
+import hud from "../assets/images/favorites_hud.png";
+import ApiFavorites from "../components/ApiFavorites";
 import HomeButton from '../components/HomeButton';
+import '../styles/Favorites.css';
 
 function Favorites() {
 

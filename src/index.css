@@ -1,7 +1,7 @@
 
 
 body {
-    background: linear-gradient(rgb(0, 130, 136), black);
+    background-color: rgba(44, 78, 92, 0.89);
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -10,6 +10,7 @@ body {
     align-items: center;
     color: rgb(201, 201, 201);
     font-family: "Vazirmatn", sans-serif;
+    overflow-y: auto;
     
 }
 

@@ -1,13 +1,14 @@
-import { Routes, Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
+import Favorites from './pages/Favorites';
 import Home from './pages/Home';
 import MoreInfo from './pages/MoreInfo';
-import Favorites from './pages/Favorites';
 import NotFound from './pages/NotFound';
 
 
 function App() {
 
   return (
+
     <Routes>
 
       <Route path='/' element={<Home />} />
@@ -16,6 +17,7 @@ function App() {
       <Route path="/*" element={<NotFound />} />
 
     </Routes>
+    
   )
 }
 
