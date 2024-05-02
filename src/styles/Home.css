@@ -107,7 +107,7 @@
     margin: 0; 
     cursor: pointer; 
     border-radius: 5px; 
-    top: 35vh;
+    top: 34vh;
     left: 83.5vw;
     transition: background-color 0.3s; 
     &:hover {
@@ -116,7 +116,7 @@
   }
 
   .AddFavoriteHome{
-    background-color: red;
+    
     position: relative;
     top: 5vh;
     left: 32.8vw;
