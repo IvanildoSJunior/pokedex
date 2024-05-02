@@ -25,7 +25,7 @@
 }
 
 .add-favorites{
-  background-color: red;
+    white-space: nowrap;
     position: relative;
     background-color: #6d6e6d; 
     border: none; 

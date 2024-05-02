@@ -31,7 +31,7 @@ const AddFavorite = () => {
 
     return (
         <div>
-          <button className="add-favorites" onClick={handleAddToFavorites}>Adicionar aos Favoritos</button>
+          <button className="add-favorites" onClick={handleAddToFavorites}>Favoritar</button>
         </div>
     )
   
